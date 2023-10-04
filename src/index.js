@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import {store} from './Component/store';
 import { Provider} from "react-redux"
-import {configureStore} from '@reduxjs/toolkit'
-import UserReducer from './Component/UserReducer';
+// import {configureStore} from '@reduxjs/toolkit'
+// import UserReducer from './Component/usersSlice';
+import store from './store';
 
-const store=configureStore({
-  reducer:{
-    users : UserReducer
-  }
-})
+// const store=configureStore({
+//   reducer:{
+//     users : UserReducer
+//   }
+// })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

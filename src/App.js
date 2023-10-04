@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Create from './Component/Create';
 import Update  from './Component/Update';
+import Web from './Component/Web';
 
 function App() {
   return (
