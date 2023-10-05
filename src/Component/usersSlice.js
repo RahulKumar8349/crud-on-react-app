@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { useSelector } from 'react-redux';
+
 const usersSlice = createSlice({
   name: 'users',
   initialState: [],
@@ -18,6 +20,9 @@ const usersSlice = createSlice({
     setUsers: (state, action) => {
       return action.payload;
     },
+    // getUsers:(state,action)=>{
+    //  return state.users;
+    // }
   },
 });
 export const { addUser, updateUser, deleteUser, setUsers } = usersSlice.actions;
